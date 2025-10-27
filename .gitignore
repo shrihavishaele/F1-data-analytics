@@ -1,0 +1,63 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Virtual environment directories created by some tools
+.venv/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+
+# Node / React
+client/node_modules/
+client/build/
+client/.env
+
+# Logs
+*.log
+
+# Misc
+*.sqlite3
+*.db
+
+# Ignore compiled frontend builds if you ever build locally
+client/build/
+
+# Ignore pipenv lock (optional)
+Pipfile.lock
