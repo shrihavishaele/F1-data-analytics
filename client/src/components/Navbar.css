@@ -1,0 +1,77 @@
+/* Navbar Styles */
+.navbar-appbar {
+  background-color: #1a1a1a !important;
+  border-bottom: 3px solid #e10600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-toolbar {
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-icon-button {
+  background-color: #e10600 !important;
+  padding: 12px !important;
+}
+
+.navbar-icon-button:hover {
+  background-color: #c10500 !important;
+}
+
+.navbar-icon {
+  font-size: 32px !important;
+}
+
+.navbar-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-title {
+  font-weight: bold !important;
+  color: white !important;
+  letter-spacing: 0.5px;
+  font-family: Arial, sans-serif !important;
+}
+
+.navbar-subtitle {
+  color: #aaa !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white !important;
+  cursor: pointer;
+  font-weight: 500 !important;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #e10600 !important;
+}
+
+.navbar-link-inactive {
+  color: #aaa !important;
+  cursor: pointer;
+  font-weight: 500 !important;
+  transition: color 0.3s;
+}
+
+.navbar-link-inactive:hover {
+  color: #e10600 !important;
+}
