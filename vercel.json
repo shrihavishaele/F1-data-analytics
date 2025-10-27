@@ -1,9 +1,11 @@
 {
-  "buildCommand": "cd client && npm ci && npm run build",
+  "version": 2,
+  "buildCommand": "npm --prefix client ci && npm --prefix client run build",
   "outputDirectory": "client/build",
   "framework": null,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.py" }
+    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "functions": {
     "api/index.py": {
