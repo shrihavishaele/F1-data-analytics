@@ -61,3 +61,4 @@ client/build/
 
 # Ignore pipenv lock (optional)
 Pipfile.lock
+.vercel

@@ -7,19 +7,37 @@
 
 .navbar-toolbar {
   justify-content: space-between;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 12px;
+  min-height: 64px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-toolbar {
+    padding: 8px 24px;
+  }
 }
 
 .navbar-logo-container {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .navbar-logo-container {
+    gap: 16px;
+  }
 }
 
 .navbar-icon-button {
   background-color: #e10600 !important;
-  padding: 12px !important;
+  padding: 8px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-button {
+    padding: 12px !important;
+  }
 }
 
 .navbar-icon-button:hover {
@@ -27,7 +45,13 @@
 }
 
 .navbar-icon {
-  font-size: 32px !important;
+  font-size: 24px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-icon {
+    font-size: 32px !important;
+  }
 }
 
 .navbar-title-container {
@@ -40,25 +64,79 @@
   color: white !important;
   letter-spacing: 0.5px;
   font-family: Arial, sans-serif !important;
+  font-size: 1.25rem !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-title {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-title {
+    font-size: 2.125rem !important;
+  }
 }
 
 .navbar-subtitle {
   color: #aaa !important;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: 0.5rem !important;
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .navbar-subtitle {
+    display: block;
+    font-size: 0.6rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-subtitle {
+    font-size: 0.75rem !important;
+  }
 }
 
 .navbar-links-container {
-  display: flex;
-  gap: 24px;
+  display: none;
+  gap: 16px;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar-links-container {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-links-container {
+    gap: 24px;
+  }
+}
+
+.navbar-link,
+.navbar-link-inactive {
+  cursor: pointer;
+  font-weight: 500 !important;
+  transition: color 0.3s;
+  font-size: 0.875rem !important;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .navbar-link,
+  .navbar-link-inactive {
+    font-size: 1rem !important;
+  }
 }
 
 .navbar-link {
   color: white !important;
-  cursor: pointer;
-  font-weight: 500 !important;
-  transition: color 0.3s;
 }
 
 .navbar-link:hover {
@@ -67,9 +145,6 @@
 
 .navbar-link-inactive {
   color: #aaa !important;
-  cursor: pointer;
-  font-weight: 500 !important;
-  transition: color 0.3s;
 }
 
 .navbar-link-inactive:hover {

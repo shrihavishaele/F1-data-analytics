@@ -8,7 +8,6 @@ import os
 app = Flask(__name__, static_folder="client/build", static_url_path="")
 CORS(app)
 
-# Load data
 # Make the data directory absolute so CSVs are found regardless of cwd
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -449,5 +448,10 @@ def serve(path):
     else:
         return send_from_directory(app.static_folder, "index.html")
 
-if __name__ == "__main__":
+# Vercel serverless handler
+if __name__ != "__main__":
+    # Running on Vercel
+    handler = app
+else:
+    # Running locally
     app.run(debug=True)
